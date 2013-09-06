@@ -31,10 +31,12 @@ puts output
 search_fact = "application=/dhcp/,ec2_region=us-east-1"
 search_class = "puppet_class"
 fact_value = mcoconn.mcodiscoverfact(fact_name,search_fact,search_class)
+puts fact_value
 ```
 
 -- Discover nodes using 'find' agent:
 ```ruby
 discovered_nodes = mcodiscovernode(search_fact,search_class)
+puts discovered_nodes
 ```
 
